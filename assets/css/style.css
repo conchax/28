@@ -3145,7 +3145,7 @@ hr {
 }
 
 .slider-area .hero-cap .breadcrumb a {
-    color: #191a33;
+    color: #b3b4c0;
     font-size: 17px;
     text-transform: uppercase
 }
@@ -3169,7 +3169,7 @@ hr {
 .slider-area .hero-cap.hero-cap2 h2 {
     font-size: 60px;
     font-weight: 700;
-    text-transform: capitalize
+    text-transform: none;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
