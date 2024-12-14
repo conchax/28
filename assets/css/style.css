@@ -138,13 +138,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6
+{
     font-family: "Barlow", sans-serif;
     color: #0b1c39;
     margin-top: 0px;
     font-style: normal;
     font-weight: 500;
     text-transform: normal
+}
+h5{
+    color: #fff;
 }
 
 p {
@@ -7281,3 +7285,187 @@ del {
 .switch-wrap {
     margin-bottom: 10px
 }
+
+/* CSS Whatsapp Chat */
+#whatsapp-chat {
+    position: fixed;
+    background: #fff;
+    max-width: 290px;
+    border-radius: 10px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+    bottom: 100px;
+    right: 10px;
+    overflow: hidden;
+    z-index: 99;
+    animation-name: showchat;
+    animation-duration: 0.02s;
+    transform: scale(1);
+  }
+  
+  a.blantershow-chat {
+    background: #fff;
+    color: #404040;
+    position: fixed;
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    z-index: 98;
+    bottom: 110px;
+    right: 20px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+    height: 40px;
+  }
+  
+  @media (max-width: 567px) {}
+  
+  a.blantershow-chat svg {
+    transform: scale(1.2);
+    margin-right: 10px;
+  }
+  
+  .header-chat {
+    background: #095e54;
+    color: #fff;
+    padding: 8px;
+  }
+  
+  .header-chat h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #e5e5e5;
+    font-size: xx-large;
+  }
+  
+  .header-chat p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  .info-chat span {
+    display: block;
+  }
+  
+  #get-label,
+  span.chat-label {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  #get-nama,
+  span.chat-nama {
+    margin: 5px 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  #get-label,
+  #get-nama {
+    color: #fff;
+  }
+  
+  span.my-number {
+    display: none;
+  }
+  
+  .blanter-msg {
+    color: #444;
+    padding: 20px;
+    font-size: 12.5px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  textarea#chat-input {
+    border: none;
+    font-family: "Arial", sans-serif;
+    width: 100%;
+    height: 20px;
+    outline: none;
+    resize: none;
+  }
+  
+  a#send-it {
+    color: #555;
+    margin: -5px 0 0 5px;
+    font-weight: 700;
+    padding: 8px;
+    background: #eee;
+    border-radius: 10px;
+  }
+  
+  .first-msg {
+    background: #f5f5f5;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .first-msg span {
+    background: #e2e2e2;
+    color: #333;
+    font-size: 14.2px;
+    line-height: 1.7;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: inline-block;
+  }
+  
+  .start-chat .blanter-msg {
+    display: flex;
+  }
+  
+  #get-number {
+    display: none;
+  }
+  
+  a.close-chat {
+    position: absolute;
+    top: -4px;
+    right: 12px;
+    color: #fff!important;
+    font-size: 30px;
+  }
+  
+  @keyframes showhide {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes showchat {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #whatsapp-chat {
+      width: auto;
+      right: 10px;
+      font-size: 80%;
+    }
+  }
+  
+  #whatsapp-chat.hide {
+    display: none;
+    animation-name: showhide;
+    animation-duration: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  #whatsapp-chat.show {
+    display: block;
+    animation-name: showhide;
+    animation-duration: 0.5s;
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  /* chat whatsapp */
