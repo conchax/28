@@ -2874,7 +2874,6 @@ hr {
 
 .slider-area .hero__caption {
     margin-left: 27px;
-    padding-top: 150px
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2928,7 +2927,8 @@ hr {
 
 @media (max-width: 575px) {
     .slider-area .hero__caption h1 {
-        font-size: 42px
+        font-size: 42px;
+        padding: 0;
     }
 }
 
@@ -2960,9 +2960,8 @@ hr {
 @media (max-width: 575px) {
     .slider-area .hero__caption .stock-text {
         top: -12px;
-        left: 40px;
-        top: 0;
-        left: 0
+        left: 20%;
+        
     }
 }
 
@@ -2996,8 +2995,8 @@ hr {
 
 @media (max-width: 575px) {
     .slider-area .hero__caption .stock-text h2 {
-        font-size: 27px;
-        margin-bottom: 25px
+        font-size: 64px;
+        text-align: center;
     }
 }
 
@@ -3062,6 +3061,12 @@ hr {
     .slider-area .hero__caption .hero-text2 a {
         margin-bottom: 20px
     }
+    .slider-area .hero__caption .hero-text1 span,
+    .slider-area .hero__caption .hero-text1 a,
+    .slider-area .hero__caption .hero-text2 span,
+    .slider-area .hero__caption .hero-text2 a {
+        font-size: 26px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -3084,7 +3089,7 @@ hr {
 
 @media (max-width: 575px) {
     .slider-area .hero__caption .hero-text2 {
-        margin-top: 50px
+        text-align: center;
     }
 }
 
@@ -3122,6 +3127,12 @@ hr {
 @media (max-width: 575px) {
     .slider-area .hero-cap h2 {
         font-size: 50px
+    }
+    .btn{
+        font-size: 18px;
+        padding: 20px 0;
+        height: 40px;
+        vertical-align: middle;
     }
 }
 
@@ -7294,7 +7305,7 @@ del {
     border-radius: 10px;
     box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
     bottom: 100px;
-    right: 10px;
+    left: 20px;
     overflow: hidden;
     z-index: 99;
     animation-name: showchat;
@@ -7310,14 +7321,17 @@ del {
     font-weight: 400;
     justify-content: space-between;
     z-index: 98;
-    bottom: 110px;
-    right: 20px;
+    bottom: 50px;
+    left: 20px;
     font-size: 15px;
     padding: 10px 20px;
     border-radius: 30px;
     box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
     height: 40px;
   }
+  .head-home {
+    display: flex;
+}
   
   @media (max-width: 567px) {}
   
@@ -7375,25 +7389,24 @@ del {
   .blanter-msg {
     color: #444;
     padding: 20px;
-    font-size: 12.5px;
+    font-size: 14px;
     text-align: center;
-    border-top: 1px solid #ddd;
   }
   
   textarea#chat-input {
-    border: none;
     font-family: "Arial", sans-serif;
     width: 100%;
-    height: 20px;
     outline: none;
     resize: none;
+    border: 2px solid #eee ;
+    border-radius: 6px;
   }
   
   a#send-it {
     color: #555;
     margin: -5px 0 0 5px;
     font-weight: 700;
-    padding: 8px;
+    padding: 18px;
     background: #eee;
     border-radius: 10px;
   }
