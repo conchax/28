@@ -2623,8 +2623,7 @@ hr {
 
 .header-area .header-top .header-info-right .header-social li a {
     color: #fff;
-    font-size: 14px;
-    padding-left: 25px
+    margin-left: 25px
 }
 
 .header-area .header-top .header-info-right .header-social li a:hover {
@@ -2749,11 +2748,11 @@ hr {
 }
 
 .header-area .header-top .header-info-right .header-social a:hover i {
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg)
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg)
 }
 
 .header-sticky.sticky-bar.sticky {
