@@ -561,8 +561,8 @@ hr {
   transition: all 0.5s;
 }
 .btn-style503:hover {
-  box-shadow: inset 6em 0 0 0 #dd7e2a, inset -6em 0 0 0 #dd7e2a;
-  border-color: #dd7e2a;
+  box-shadow: inset 6em 0 0 0 #1696e7, inset -6em 0 0 0 #1696e7;
+  border-color: #1696e7;
   color: #fff;
 }
 
@@ -7528,3 +7528,34 @@ del {
   .clientes img{
     margin: 20px 3px;
   }
+
+
+.slideshow {
+width: 100vw;
+height: 45vw;
+background-size: cover;
+background-repeat: no-repeat;
+animation: slideshow 40s ease-in-out infinite;
+color: #fff;
+}
+.slideshow .section-tittle span.back-text {
+-webkit-text-stroke: 1px rgb(196, 196, 194);
+    -webkit-text-fill-color: transparent;}
+
+.slideshow .btn-style503{
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.5s;
+}    
+@keyframes slideshow {
+0% { background-image: url("../img/proyectos/p1.jpg"); }
+11.11% { background-image: url("../img/proyectos/p2.jpg"); }
+22.22% { background-image: url("../img/proyectos/p3.jpg"); }
+33.33% { background-image: url("../img/proyectos/p4.jpg"); }
+44.44% { background-image: url("../img/proyectos/p5.jpg"); }
+55.55% { background-image: url("../img/proyectos/p6.jpg"); }
+66.66% { background-image: url("../img/proyectos/p7.jpg"); }
+77.77% { background-image: url("../img/proyectos/p8.jpg"); }
+88.88% { background-image: url("../img/proyectos/p9.jpg"); }
+99.99% { background-image: url("../img/proyectos/p10.jpg"); }
+}
