@@ -2244,7 +2244,8 @@ hr {
 
 @media (max-width: 575px) {
     .section-tittle {
-        margin-bottom: 0px
+        margin-bottom: 0px;
+        height: 100px;
     }
 }
 
@@ -2265,8 +2266,13 @@ hr {
 @media (max-width: 575px) {
     .section-tittle .front-text h2 {
         font-size: 40px;
-        line-height: 1.4
+        line-height: 1.4;
+        transform: translateY(70%);
     }
+/*     .img-r{
+        max-width: 100%;  
+        height: auto;
+    } */
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -2316,7 +2322,8 @@ hr {
 
 @media (max-width: 575px) {
     .section-tittle.section-tittle2 .front-text h2 {
-        font-size: 40px
+        font-size: 40px;
+        transform: translateY(70%);
     }
 }
 
@@ -3468,7 +3475,7 @@ hr {
 }
 
 .support-company-area .support-wrapper .right-content .right-img img {
-/*     width: 100%*/
+    width: 100%
 
 }
 
@@ -3480,7 +3487,11 @@ hr {
     padding: 59px 28px;
     border-radius: 5px
 }
-.clientes img{width: 200px;}
+
+/* .slick-slide,  .slick-cloned, .slick-current, .slick-active{
+    width: 285px!important;
+}
+ */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .support-company-area .support-wrapper .right-content .support-img-cap {
         padding: 27px 18px
@@ -7331,10 +7342,10 @@ del {
 #whatsapp-chat {
     position: fixed;
     background: #fff;
-    width: 360px;
+    width: 260px;
     border-radius: 10px;
     box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
-    bottom: 30%;
+    bottom: 50px;
     right: 20px;
     overflow: hidden;
     z-index: 8;
@@ -7351,15 +7362,16 @@ del {
     font-weight: 400;
     justify-content: space-between;
     z-index: 7;
-    bottom: 50%;
-    right: 20px;
-    font-size: 28px;
+    bottom: 50px;
+    right: 10px;
+    font-size: 20px;
     padding: 10px 20px;
     border-radius: 30px;
     box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
-    height: 80px;
-    width: 360px;
+    height: 40px;
+    width: 250px;
     align-items: center;
+    cursor: pointer;
   }
   .head-home {
     display: flex;
@@ -7368,20 +7380,20 @@ del {
   @media (max-width: 567px) {
     a.blantershow-chat{
         font-size: 18px;
-        width: 260px;
+        width: 230px;
       }
   }
   
   a.blantershow-chat svg, #whatsapp-chat svg {
-    transform: scale(2);
-    margin-right: 10px;
+    /* transform: scale(2);
+    margin-right: 10px; */
   }
   
   .header-chat {
     background: #095e54;
     color: #fff;
-    padding: 18px;
-    height: 60px;
+    padding:1px 18px;
+    height: 30px;
   }
  
   
@@ -7427,7 +7439,7 @@ del {
   
   .blanter-msg {
     color: #444;
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
     text-align: center;
   }
@@ -7442,17 +7454,21 @@ del {
   }
   
   a#send-it {
-    color: #555;
-    margin: -5px 0 0 5px;
-    font-weight: 700;
-    padding: 18px;
-    background: #eee;
+    color: #fff;
+    margin: 0 auto;
+    font-weight: 500;
+    padding: 5px 10px;
+    background: #4caf51;
     border-radius: 10px;
+    cursor: pointer;
+  }
+  .colo{
+    color: #fff!important;
   }
   
   .first-msg {
     background: #f5f5f5;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
   }
   
@@ -7479,7 +7495,8 @@ del {
     top: -20px;
     right: 12px;
     color: #fff!important;
-    font-size: 60px;
+    font-size: 40px;
+    cursor: pointer;
   }
   
   @keyframes showhide {
@@ -7525,14 +7542,12 @@ del {
   .clientes{
     background-color: #d3cfcf;
   }
-  .clientes img{
-    margin: 20px 3px;
-  }
+
 
 
 .slideshow {
 width: 100vw;
-height: 45vw;
+padding: 30px 0;
 background-size: cover;
 background-repeat: no-repeat;
 animation: slideshow 40s ease-in-out infinite;
@@ -7558,4 +7573,81 @@ color: #fff;
 77.77% { background-image: url("../img/proyectos/p8.jpg"); }
 88.88% { background-image: url("../img/proyectos/p9.jpg"); }
 99.99% { background-image: url("../img/proyectos/p10.jpg"); }
+}
+
+/*
+
+CC 2.0 License Iatek LLC 2018
+Attribution required
+
+*/
+.carousel-inner {
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+        margin-right: initial;
+    }
+    
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
 }
