@@ -213,12 +213,12 @@
 
 
 /* 13. counterUp*/
-/*   $('.counter').counterUp({
+  /* $('.counter').counterUp({
     delay: 10,
     time: 3000
   });
-
  */
+
     
 // 11. ---- Mailchimp js --------//  
 /*     function mailChimp() {
